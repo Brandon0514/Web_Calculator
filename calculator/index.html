@@ -3,18 +3,18 @@
 <html>
 
 <head>
-  <meta charset="UTF-8">
-<title>Scientific Calculator</title>  
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>Scientific Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-	<link rel="stylesheet" href="style.css">  
+    <link rel="stylesheet" href="style.css">
 </head>
 
 
 <body>
-	<h3 style="text-align:center">Scientific Calculator</h3>
-	<p id="warning" class="warning">Warning: Don't divide by zero</p>
-    <div id="formula" class="formula" >
+    <h3 style="text-align:center">Web Calculator</h3>
+    <p id="warning" class="warning">Warning: Don't divide by zero</p>
+    <div id="formula" class="formula">
         <table align="center">
             <tr>
                 <td align="center">
@@ -34,14 +34,15 @@
                     </select>
                 </td>
             </tr>
-        </table><center> </center>
+        </table>
+        <center> </center>
     </div>
     <div id="wrapper" class="wrapper" style="align-content:center;align-items:center;align-self:center">
         <button id="check" class="check" style="width:3em" align="center">GO!</button>
-    </div>		
-    <div id="calculator" class="calculator">  
-		<button id="clear" class="clear">C</button>
-		<div id="viewer" class="viewer">0</div>
+    </div>
+    <div id="calculator" class="calculator">
+        <button id="clear" class="clear">C</button>
+        <div id="viewer" class="viewer">0</div>
         <table>
             <tr>
                 <td>
@@ -54,7 +55,7 @@
                     <button class="num" data-num="9">9</button>
                 </td>
                 <td>
-                    <button data-ops="plus" class="ops">+</button> 
+                    <button data-ops="plus" class="ops">+</button>
                 </td>
             </tr>
             <tr>
@@ -93,7 +94,7 @@
                     <button class="num" data-num=".">.</button>
                 </td>
                 <td>
-                    <button id="equals" class="equals" data-result="">=</button>  
+                    <button id="equals" class="equals" data-result="">=</button>
                 </td>
                 <td>
                     <button data-ops="divided by" class="ops">/</button>
@@ -104,9 +105,9 @@
                     <button id="prevAns" class="prevAns" style="width:8em" align="center">Answer</button>
                 </td>
             </tr>
-        </table>		
-     </div>
-	<script  src="index.js"></script>
+        </table>
+    </div>
+    <script src="index.js"></script>
 </body>
 
 </html>

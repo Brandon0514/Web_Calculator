@@ -1,12 +1,12 @@
 html {
   background-attachment: fixed;
-  color: #6cacc5;
+  color: #c7edfc;
   text-align: center;
 }
 
 body {
   color: #000000;
-  font: 300 18px/1.6 "Source Sans Pro",sans-serif;
+  font: 300 18px/1.6 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 5em 0 2em;
   text-align: center;
@@ -33,8 +33,9 @@ h1 {
   margin: 0 auto;
   width: 6em;
 }
-.calculator::before, .calculator::after {
-  content: " ";
+.calculator::before,
+.calculator::after {
+  content: ' ';
   display: table;
 }
 .calculator::after {
@@ -84,11 +85,11 @@ button:focus {
 }
 button:focus::after {
   -webkit-animation: zoom 1s;
-          animation: zoom 1s;
+  animation: zoom 1s;
   -webkit-animation-iteration-count: 1;
-          animation-iteration-count: 1;
+  animation-iteration-count: 1;
   -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+  animation-fill-mode: both;
   content: attr(data-num);
   cursor: default;
   font-size: 100px;
