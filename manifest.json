@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "Calculator",
+  "description": "Displays a calculator as a sidebar.",
+  "version": "1.0",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "54.0a1"
+    }
+  },
+
+  "sidebar_action": {
+    "default_title" : "Calculator",
+    "default_panel": "calculator/index.html"
+  },
+
+  "permissions": ["tabs"],
+
+  "commands": {
+    "_execute_sidebar_action": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+Y"
+      }
+    }
+  }
+
+}
