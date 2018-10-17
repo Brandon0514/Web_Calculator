@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="UTF-8">
+<title>Scientific Calculator</title>  
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+	<link rel="stylesheet" href="style.css">  
+</head>
+
+
+<body>
+	<h3 style="text-align:center">Scientific Calculator</h3>
+	<p id="warning" class="warning">Warning: Don't divide by zero</p>
+    <div id="formula" class="formula" >
+        <table align="center">
+            <tr>
+                <td align="center">
+                    <p id="formulaDisplay" class="formulaDisplay" style="text-align:center">Pick a Formula</p>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <select id="formulaList" class="formulaList">
+                        <option value="None">None</option>
+                        <option value="BMI">BMI</option> <!-- Weight(kg) / (Height(m) * Height) -->
+                        <option value="AreaCircle">Area of Circle</option> <!-- 3.142 * (radius * radius) -->
+                        <option value="PerimeterCircle">Perimeter of Circle</option> <!-- 2 * 3.142 * radius -->
+                        <option value="Density">Density</option> <!-- Mass / Volume -->
+                        <option value="Velocity">Velocity</option> <!-- Distance / Time -->
+                        <option value="Momentum">Momentum</option> <!-- Mass * Velocity -->
+                    </select>
+                </td>
+            </tr>
+        </table><center> </center>
+    </div>
+    <div id="wrapper" class="wrapper" style="align-content:center;align-items:center;align-self:center">
+        <button id="check" class="check" style="width:3em" align="center">GO!</button>
+    </div>		
+    <div id="calculator" class="calculator">  
+		<button id="clear" class="clear">C</button>
+		<div id="viewer" class="viewer">0</div>
+        <table>
+            <tr>
+                <td>
+                    <button class="num" data-num="7">7</button>
+                </td>
+                <td>
+                    <button class="num" data-num="8">8</button>
+                </td>
+                <td>
+                    <button class="num" data-num="9">9</button>
+                </td>
+                <td>
+                    <button data-ops="plus" class="ops">+</button> 
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="num" data-num="4">4</button>
+                </td>
+                <td>
+                    <button class="num" data-num="5">5</button>
+                </td>
+                <td>
+                    <button class="num" data-num="6">6</button>
+                </td>
+                <td>
+                    <button data-ops="minus" class="ops">-</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="num" data-num="1">1</button>
+                </td>
+                <td>
+                    <button class="num" data-num="2">2</button>
+                </td>
+                <td>
+                    <button class="num" data-num="3">3</button>
+                </td>
+                <td>
+                    <button data-ops="times" class="ops">*</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="num" data-num="0">0</button>
+                </td>
+                <td>
+                    <button class="num" data-num=".">.</button>
+                </td>
+                <td>
+                    <button id="equals" class="equals" data-result="">=</button>  
+                </td>
+                <td>
+                    <button data-ops="divided by" class="ops">/</button>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="4">
+                    <button id="prevAns" class="prevAns" style="width:8em" align="center">Answer</button>
+                </td>
+            </tr>
+        </table>		
+     </div>
+	<script  src="index.js"></script>
+</body>
+
+</html>
