@@ -44,6 +44,21 @@
         <button id="clear" class="clear">C</button>
         <div id="viewer" class="viewer">0</div>
         <table>
+
+            <tr>
+                <td>
+                    <button class="num" data-num="Clear">AC</button>
+                </td>
+                <td>
+                    <button class="num" data-num="">+/-</button>
+                </td>
+                <td>
+                    <button class="num" data-num="mod">%</button>
+                </td>
+                <td>
+                    <button data-ops="divided by" class="ops">/</button>
+                </td>
+            </tr>
             <tr>
                 <td>
                     <button class="num" data-num="7">7</button>
@@ -55,7 +70,7 @@
                     <button class="num" data-num="9">9</button>
                 </td>
                 <td>
-                    <button data-ops="plus" class="ops">+</button>
+                    <button data-ops="times" class="ops">*</button>
                 </td>
             </tr>
             <tr>
@@ -83,7 +98,7 @@
                     <button class="num" data-num="3">3</button>
                 </td>
                 <td>
-                    <button data-ops="times" class="ops">*</button>
+                    <button data-ops="plus" class="ops">+</button>
                 </td>
             </tr>
             <tr>
@@ -96,13 +111,10 @@
                 <td>
                     <button id="equals" class="equals" data-result="">=</button>
                 </td>
-                <td>
-                    <button data-ops="divided by" class="ops">/</button>
-                </td>
             </tr>
             <tr>
                 <td colspan="4">
-                    <button id="prevAns" class="prevAns" style="width:8em" align="center">Answer</button>
+                    <button id="prevAns" class="prevAns" style="width:8.5em" align="center">Answer</button>
                 </td>
             </tr>
         </table>
