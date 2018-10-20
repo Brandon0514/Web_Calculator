@@ -60,8 +60,8 @@ h1 {
   float: left;
   line-height: 3em;
   text-align: right;
-  text-overflow: ellipsis;
-  overflow: hidden;
+  text-overflow: clip;
+  overflow: auto;
   width: 8em;
   height: 3em;
 }

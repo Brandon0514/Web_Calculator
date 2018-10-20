@@ -113,6 +113,15 @@ TODO:
     equals.setAttribute('data-result', resultNum);
   };
 
+  // When: Clear button is pressed. Clear everything, except previous answer
+  var clearAllAC = function() {
+    oldNum = '';
+    currentNum = '';
+    viewer.innerHTML = '0';
+    prevAnsNum = 0;
+    equals.setAttribute('data-result', resultNum);
+  };
+
   /* The click events */
   // Add click event to numbers
   for (var i = 0, l = nums.length; i < l; i++) {
@@ -132,6 +141,7 @@ TODO:
 
   // Add click event to clear button
   el('#clear').onclick = clearAll;
+  el('#clearAC').onclick = clearAllAC;
 
   // Showing formula on the calculator based on user choice
   var changeFormula = function() {
@@ -151,7 +161,9 @@ TODO:
       formulaDisplay.innerHTML = 'Pick a Formula';
     }
   };
+  // Add click event for changing formula
+  formulaList.onclick = changeFormula;
 
   // Add click event for to GO! button
-  check.onclick = changeFormula;
+  //check.onclick = changeFormula;
 })();
