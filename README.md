@@ -1,15 +1,35 @@
 # Web_Calculator
+
 Calculator
-The Calculator is a standard arithmetic calculator whose web extensions interface is developed with HTML and CSS whilst Javascript(.js) is used for developing the back-end functionalities of the extension. It is a standard arithmetic calculator but with extra Quality of Life enhancements made for it to facilitate to some user's needs such as referring to mathematical or scientific formulae or tracing the most recent answer of the user.
+A simple calculator that remembers your last calculation. You can close it at any time and reopen it without losing your work.
+A simple calculator for basic arithmetic.
 
-<<<<<<< HEAD
-=======
-Features
-Math Operations
-The calculator should carry out the following operations
+You can open the calculator easily just a simple short-cut key (Ctrl+Shift+Y) while browsing any web page. It remembers your last calculation so you can close it at any time and reopen without losing your work.
 
-_addition (integer)
-_subtraction (integer)
-_integer division (integer)
-_multiplication (integer)
->>>>>>> f782642889e48bbd572c113d27ecb8e2fb006164
+# <<<<<<< HEAD
+
+# Features
+
+\nMath Operations
+\nThe calculator should carry out the following operations
+
+• Addition (integer)
+• Subtraction (integer)
+• Integer division 
+• Multiplication 
+• Formula
+• It's Free!
+
+> > > > > > > f782642889e48bbd572c113d27ecb8e2fb006164
+
+# More Keyboard Shortcuts:
+
+• Number Pad or 0-9 for Number Entry
+• Equals (= or Enter)
+• Clear ("c")
+• Delete(Del/backspace)
+• Copy to clipboard (ctrl-c)
+• Divide (/)
+• Times (\*)
+• Minus (-)
+• Plus (+)
