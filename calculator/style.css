@@ -4,7 +4,7 @@
 
 html {
   background-attachment: fixed;
-  color: #c7edfc;
+  color: #9cdcf5;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ h1 {
 
 /* Gradient text only on Webkit */
 .warning {
-  background: -webkit-linear-gradient(45deg, #c97874 10%, #463042 90%);
+  background: -webkit-linear-gradient(45deg, #df94f1 10%, #463042 90%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: #000000;

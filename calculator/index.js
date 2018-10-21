@@ -157,6 +157,16 @@ TODO:
       formulaDisplay.innerHTML = 'Distance / Time';
     } else if (formulaList.value == 'Momentum') {
       formulaDisplay.innerHTML = 'Mass * Velocity';
+    } else if (formulaList.value == 'Area of a Trapezoid') {
+      formulaDisplay.innerHTML = '12 × height × (short base + long base)';
+    } else if (formulaList.value == 'Surfacearea of a Square Pyramid') {
+      formulaDisplay.innerHTML = '2bs + b^2';
+    } else if (formulaList.value == 'Surfacearea of a Triangular Pyramid') {
+      formulaDisplay.innerHTML = '(1/2ab) + (3/2)bs';
+    } else if (formulaList.value == 'Surfacearea of a Pentagonal Pyramid') {
+      formulaDisplay.innerHTML = '(5/2)ab+(52)bs';
+    } else if (formulaList.value == 'Surfacearea of a Pentagonal Hexagonal Pyramid') {
+      formulaDisplay.innerHTML = '3ab + 3bs';
     } else {
       formulaDisplay.innerHTML = 'Pick a Formula';
     }
