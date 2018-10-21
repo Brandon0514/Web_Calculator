@@ -5,12 +5,17 @@
   "version": "1.0",
   "applications": {
     "gecko": {
-      "strict_min_version": "54.0a1"
+      "strict_min_version": "bfa912af8b9ca4bc37c8453da7a15190f4810b8f@temporary-addon"
     }
   },
 
+  "icons": {
+    "48": "calculator/images/calculator.png"
+  },
+
   "sidebar_action": {
-    "default_title" : "Calculator",
+    "default_icon": "calculator/images/calculator.png",
+    "default_title": "Calculator",
     "default_panel": "calculator/index.html"
   },
 
@@ -23,5 +28,4 @@
       }
     }
   }
-
 }
