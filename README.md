@@ -1,13 +1,15 @@
 # Web_Calculator
+
 Calculator
 A simple calculator that remembers your last calculation. You can close it at any time and reopen it without losing your work.
-A simple calculator for basic arithmetic. 
+A simple calculator for basic arithmetic.
 
-You can open the calculator easily just a simple short-cut key (Ctrl+Shift+Y) while browsing any web page. It remembers your last calculation so you can close it at any time and reopen without losing your work. 
+You can open the calculator easily just a simple short-cut key (Ctrl+Shift+Y) while browsing any web page. It remembers your last calculation so you can close it at any time and reopen without losing your work.
 
-<<<<<<< HEAD
-=======
+# <<<<<<< HEAD
+
 # Features
+
 \nMath Operations
 \nThe calculator should carry out the following operations
 
@@ -18,7 +20,7 @@ You can open the calculator easily just a simple short-cut key (Ctrl+Shift+Y) wh
 • Formula
 • It's Free!
 
->>>>>>> f782642889e48bbd572c113d27ecb8e2fb006164
+> > > > > > > f782642889e48bbd572c113d27ecb8e2fb006164
 
 # More Keyboard Shortcuts:
 
@@ -28,6 +30,6 @@ You can open the calculator easily just a simple short-cut key (Ctrl+Shift+Y) wh
 • Delete(Del/backspace)
 • Copy to clipboard (ctrl-c)
 • Divide (/)
-• Times (*)
+• Times (\*)
 • Minus (-)
 • Plus (+)
