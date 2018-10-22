@@ -8,23 +8,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="currencies.js"></script> 
-    <script type="text/javascript" src="popup.js"></script> 
-    <link rel="stylesheet" type="text/css" href="stylesheets/popup.css"> 
-		<link rel="stylesheet" type="text/css" href="stylesheets/button.css"> 
-		<link rel="stylesheet" type="text/css" href="stylesheets/select.css"> 
 </head>
 
 
 <body>
-    <h3 style="text-align:center">Web Calculator</h3>
+
     <div id="formula" class="formula">
+        <h3 style="text-align:center">Live Currency</h3>
+
         <table align="center">
             <tr>
-                <td align="center">
-                    <p id="formulaDisplay" class="formulaDisplay" style="text-align:center">Sample Calculation Formula</p>
+                <td>
+                    <table id="currency">
+                    </table>
                 </td>
             </tr>
+            <tr>
+                <td>
+                    <table class="width100" align="center">
+                        <tr>
+                            <td class="width100 paddingtd">
+                                <div id="loading" class="throbber" style="visibility: hidden;"></div>
+                            </td>
+                            <td class="paddingtd">
+                                <input type="button" id="btnAdd" value="Add">
+                            </td>
+                            <td class="paddingtd">
+                                <input type="button" id="btnRemove" value="Remove">
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+        </table>
+        <h3 style="text-align:center">Pick A Formula</h3>
+
+        <table>
+            <tr>
+                <td align="center">
+                    <p id="formulaDisplay" class="formulaDisplay" style="text-align:center">Pick A Formula</p>
+                </td>
+            </tr>
+
             <tr>
                 <td align="center">
                     <select id="formulaList" class="formulaList">
@@ -45,9 +70,10 @@
                         <!-- Surfacearea of a Square Pyramid = 2bs + b^2 -->
                         <option value="Surfacearea of a Triangular Pyramid">Surfacearea of a Triangular Pyramid</option>
                         <!-- Surfacearea of a Triangular Pyramid = (1/2ab) + (3/2)bs -->
-                        <option value="Surfacearea of a Pentagonal Pyramid">Surfacearea of a Pentagonal Pyramid</option>    
+                        <option value="Surfacearea of a Pentagonal Pyramid">Surfacearea of a Pentagonal Pyramid</option>
                         <!-- Surfacearea of a Pentagonal Pyramid = (5/2)ab+(52)bs -->
-                        <option value="Surfacearea of a Pentagonal Hexagonal Pyramid">Surfacearea of a Pentagonal Hexagonal Pyramid</option>
+                        <option value="Surfacearea of a Pentagonal Hexagonal Pyramid">Surfacearea of a Pentagonal
+                            Hexagonal Pyramid</option>
                         <!-- Surfacearea of a Pentagonal Hexagonal Pyramid = 3ab + 3bs -->
 
 
@@ -58,9 +84,10 @@
         </table>
         <center> </center>
     </div>
-    <div id="calculator" class="calculator">
-        <td align="center">
-            <button id="clear" class="clear">C</button></td>
+    <h3 style="text-align:center">Simple Calculator</h3>
+
+    <div id="calculator" class="calculator" align="center">
+
         <div id="viewer" class="viewer">0</div>
         <table>
 
@@ -130,6 +157,8 @@
                 <td>
                     <button id="equals" class="equals" data-result="">=</button>
                 </td>
+                <td align="center">
+                    <button id="clear" class="clear">C</button></td>
             </tr>
             <tr>
                 <td colspan="4">
@@ -139,32 +168,10 @@
         </table>
     </div>
 
-    <table> 
-        <tr> 
-            <td> 
-                <table id="currency"> 
-                </table> 
-            </td> 
-        </tr> 
-        <tr> 
-            <td> 
-                <table class="width100"> 
-                    <tr> 
-                        <td class="width100 paddingtd"> 
-                            <div id="loading" class="throbber" style="visibility: hidden;"></div>
-                        </td> 
-                        <td class="paddingtd"> 
-                            <input type="button" id="btnAdd" value="Add">
-                        </td> 
-                        <td class="paddingtd">
-                            <input type="button" id="btnRemove" value="Remove" style="width:72px;">
-                        </td>
-                    </tr> 
-                </table> 
-            </td> 
-        </tr> 
-    </table> 
+
     <script src="index.js"></script>
+    <script src="currencies.js"></script>
+    <script src="popup.js"></script>
 </body>
 
 </html>

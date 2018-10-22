@@ -15,11 +15,11 @@
 
   "sidebar_action": {
     "default_icon": "calculator/images/calculator.png",
-    "default_title": "Calculator",
+    "default_title": "Smart Calculator",
     "default_panel": "calculator/index.html"
   },
 
-  "permissions": ["tabs"],
+  "permissions": ["tabs", "*://api.openrates.io/"],
 
   "commands": {
     "_execute_sidebar_action": {
@@ -28,9 +28,7 @@
       }
     }
   },
-
-  "permissions": 
-	[
-		"*://api.openrates.io/"
-	]
+  "background": {
+    "scripts": ["calculator/background.js"]
+  }
 }

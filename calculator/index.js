@@ -141,11 +141,13 @@ TODO:
 
   // Add click event to clear button
   el('#clear').onclick = clearAll;
+  currency;
   el('#clearAC').onclick = clearAllAC;
 
   // Showing formula on the calculator based on user choice
   var changeFormula = function() {
     if (formulaList.value == 'BMI') {
+
       formulaDisplay.innerHTML = 'Weight / (Height * Height)';
     } else if (formulaList.value == 'AreaCircle') {
       formulaDisplay.innerHTML = '3.142 * (radius * radius)';
@@ -165,7 +167,9 @@ TODO:
       formulaDisplay.innerHTML = '(1/2ab) + (3/2)bs';
     } else if (formulaList.value == 'Surfacearea of a Pentagonal Pyramid') {
       formulaDisplay.innerHTML = '(5/2)ab+(52)bs';
-    } else if (formulaList.value == 'Surfacearea of a Pentagonal Hexagonal Pyramid') {
+    } else if (
+      formulaList.value == 'Surfacearea of a Pentagonal Hexagonal Pyramid'
+    ) {
       formulaDisplay.innerHTML = '3ab + 3bs';
     } else {
       formulaDisplay.innerHTML = 'Pick a Formula';
