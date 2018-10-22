@@ -1,170 +1,38 @@
-﻿<!DOCTYPE html>
-
-<html>
-
-<head>
-    <meta charset="UTF-8">
-    <title>Scientific Calculator</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="currencies.js"></script> 
-    <script type="text/javascript" src="popup.js"></script> 
-    <link rel="stylesheet" type="text/css" href="stylesheets/popup.css"> 
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html> 
+	<head> 
+		<title>Currency Converter</title> 
+		<link rel="stylesheet" type="text/css" href="stylesheets/popup.css"> 
 		<link rel="stylesheet" type="text/css" href="stylesheets/button.css"> 
 		<link rel="stylesheet" type="text/css" href="stylesheets/select.css"> 
-</head>
-
-
-<body>
-    <h3 style="text-align:center">Web Calculator</h3>
-    <div id="formula" class="formula">
-        <table align="center">
-            <tr>
-                <td align="center">
-                    <p id="formulaDisplay" class="formulaDisplay" style="text-align:center">Sample Calculation Formula</p>
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <select id="formulaList" class="formulaList">
-                        <option value="None">None</option>
-                        <option value="BMI">BMI</option> <!-- Weight(kg) / (Height(m) * Height) -->
-                        <option value="AreaCircle">Area of Circle</option> <!-- 3.142 * (radius * radius) -->
-                        <option value="PerimeterCircle">Perimeter of Circle</option> <!-- 2 * 3.142 * radius -->
-                        <option value="Density">Density</option> <!-- Mass / Volume -->
-                        <option value="Velocity">Velocity</option> <!-- Distance / Time -->
-                        <option value="Momentum">Momentum</option> <!-- Mass * Velocity -->
-                        <option value="Area of a Trapezoid">Area of a Trapezoid</option>
-                        <!-- Area of a Trapezoid = A = 12 × h × (a + b)
-                            Where:
-                            h = height (Note – This is the perpendicular height, not the length of the legs.)
-                            a = the short base
-                            b = the long base -->
-                        <option value="Surfacearea of a Square Pyramid">Surfacearea of a Square Pyramid</option>
-                        <!-- Surfacearea of a Square Pyramid = 2bs + b^2 -->
-                        <option value="Surfacearea of a Triangular Pyramid">Surfacearea of a Triangular Pyramid</option>
-                        <!-- Surfacearea of a Triangular Pyramid = (1/2ab) + (3/2)bs -->
-                        <option value="Surfacearea of a Pentagonal Pyramid">Surfacearea of a Pentagonal Pyramid</option>    
-                        <!-- Surfacearea of a Pentagonal Pyramid = (5/2)ab+(52)bs -->
-                        <option value="Surfacearea of a Pentagonal Hexagonal Pyramid">Surfacearea of a Pentagonal Hexagonal Pyramid</option>
-                        <!-- Surfacearea of a Pentagonal Hexagonal Pyramid = 3ab + 3bs -->
-
-
-
-                    </select>
-                </td>
-            </tr>
-        </table>
-        <center> </center>
-    </div>
-    <div id="calculator" class="calculator">
-        <td align="center">
-            <button id="clear" class="clear">C</button></td>
-        <div id="viewer" class="viewer">0</div>
-        <table>
-
-            <tr>
-                <td>
-                    <button id="clearAC" class="clear" data-num="Clear">AC</button>
-                </td>
-                <td>
-                    <button class="num" data-num="">+/-</button>
-                </td>
-                <td>
-                    <button class="num" data-num="mod">%</button>
-                </td>
-                <td>
-                    <button data-ops="divided by" class="ops">/</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="num" data-num="7">7</button>
-                </td>
-                <td>
-                    <button class="num" data-num="8">8</button>
-                </td>
-                <td>
-                    <button class="num" data-num="9">9</button>
-                </td>
-                <td>
-                    <button data-ops="times" class="ops">*</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="num" data-num="4">4</button>
-                </td>
-                <td>
-                    <button class="num" data-num="5">5</button>
-                </td>
-                <td>
-                    <button class="num" data-num="6">6</button>
-                </td>
-                <td>
-                    <button data-ops="minus" class="ops">-</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="num" data-num="1">1</button>
-                </td>
-                <td>
-                    <button class="num" data-num="2">2</button>
-                </td>
-                <td>
-                    <button class="num" data-num="3">3</button>
-                </td>
-                <td>
-                    <button data-ops="plus" class="ops">+</button>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <button class="num" data-num="0">0</button>
-                </td>
-                <td>
-                    <button class="num" data-num=".">.</button>
-                </td>
-                <td>
-                    <button id="equals" class="equals" data-result="">=</button>
-                </td>
-            </tr>
-            <tr>
-                <td colspan="4">
-                    <button id="prevAns" class="prevAns" style="width:8.5em" align="center">Previous Results</button>
-                </td>
-            </tr>
-        </table>
-    </div>
-
-    <table> 
-        <tr> 
-            <td> 
-                <table id="currency"> 
-                </table> 
-            </td> 
-        </tr> 
-        <tr> 
-            <td> 
-                <table class="width100"> 
-                    <tr> 
-                        <td class="width100 paddingtd"> 
-                            <div id="loading" class="throbber" style="visibility: hidden;"></div>
-                        </td> 
-                        <td class="paddingtd"> 
-                            <input type="button" id="btnAdd" value="Add">
-                        </td> 
-                        <td class="paddingtd">
-                            <input type="button" id="btnRemove" value="Remove" style="width:72px;">
-                        </td>
-                    </tr> 
-                </table> 
-            </td> 
-        </tr> 
-    </table> 
-    <script src="index.js"></script>
-</body>
-
-</html>
+		<script type="text/javascript" src="scripts/currencies.js"></script> 
+		<script type="text/javascript" src="scripts/popup.js"></script> 
+	</head> 
+	<body> 
+		<table> 
+			<tr> 
+				<td> 
+					<table id="currency"> 
+					</table> 
+				</td> 
+			</tr> 
+			<tr> 
+				<td> 
+					<table class="width100"> 
+						<tr> 
+							<td class="width100 paddingtd"> 
+								<div id="loading" class="throbber" style="visibility: hidden;"></div>
+							</td> 
+							<td class="paddingtd"> 
+								<input type="button" id="btnAdd" value="Add">
+							</td> 
+							<td class="paddingtd">
+								<input type="button" id="btnRemove" value="Remove" style="width:72px;">
+							</td>
+						</tr> 
+					</table> 
+				</td> 
+			</tr> 
+		</table> 
+	</body>	
+</html> 
