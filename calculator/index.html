@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="currencies.js"></script> 
+    <script type="text/javascript" src="popup.js"></script> 
 </head>
 
 
@@ -133,6 +135,32 @@
             </tr>
         </table>
     </div>
+
+    <table> 
+        <tr> 
+            <td> 
+                <table id="currency"> 
+                </table> 
+            </td> 
+        </tr> 
+        <tr> 
+            <td> 
+                <table class="width100"> 
+                    <tr> 
+                        <td class="width100 paddingtd"> 
+                            <div id="loading" class="throbber" style="visibility: hidden;"></div>
+                        </td> 
+                        <td class="paddingtd"> 
+                            <input type="button" id="btnAdd" value="Add">
+                        </td> 
+                        <td class="paddingtd">
+                            <input type="button" id="btnRemove" value="Remove" style="width:72px;">
+                        </td>
+                    </tr> 
+                </table> 
+            </td> 
+        </tr> 
+    </table> 
     <script src="index.js"></script>
 </body>
 
