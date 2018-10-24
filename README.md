@@ -17,15 +17,5 @@ The calculator should carry out the following operations<br/>
 • Multiplication (integer)<br/>
 • Formula<br/>
 • It's Free!<br/>
+• Live Currency Convertor<br/>
 
-# More Keyboard Shortcuts:
-
-• Number Pad or 0-9 for Number Entry<br/>
-• Equals (= or Enter)<br/>
-• Clear ("c")<br/>
-• Delete(Del/backspace)<br/>
-• Copy to clipboard (ctrl-c)<br/>
-• Divide (/)<br/>
-• Times (\*)<br/>
-• Minus (-)<br/>
-• Plus (+)<br/>

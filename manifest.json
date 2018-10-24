@@ -1,6 +1,6 @@
 {
   "manifest_version": 2,
-  "name": "Calculator",
+  "name": "Web Calculator",
   "description": "Displays a calculator as a sidebar.",
   "version": "1.0",
   "applications": {
@@ -15,7 +15,7 @@
 
   "sidebar_action": {
     "default_icon": "calculator/images/calculator.png",
-    "default_title": "Smart Calculator",
+    "default_title": "Web Calculator",
     "default_panel": "calculator/index.html"
   },
 
